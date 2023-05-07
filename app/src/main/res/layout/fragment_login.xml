@@ -8,9 +8,8 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="442dp"
-        android:layout_height="343dp"
-        android:layout_marginBottom="60dp"
+        android:layout_width="423dp"
+        android:layout_height="283dp"
         android:src="@drawable/top_background"
         app:layout_constraintBaseline_toBottomOf="@+id/etSatu"
         app:layout_constraintBottom_toTopOf="@+id/etSatu"

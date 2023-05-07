@@ -1,23 +1,18 @@
-package com.example.chapterlima.adapter
+package com.example.teschallengechp5.adapter
 
-import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.navigation.Navigation
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
-import com.bumptech.glide.Glide
-import com.example.chapterlima.MainActivity
-import com.example.chapterlima.R
-import com.example.chapterlima.databinding.ItemMovieBinding
-import com.example.chapterlima.fragment.DetailFragment
 import com.example.chapterlima.model.Movie
 import com.example.chapterlima.network.Result
+import com.example.teschallengechp5.R
+import com.example.teschallengechp5.databinding.ItemMovieBinding
 
 class MovieAdapter(var listMovie : List<Result>): RecyclerView.Adapter<MovieAdapter.ViewHolder>() {
 
-    class ViewHolder (var binding : ItemMovieBinding): RecyclerView.ViewHolder(binding.root) {
+    class ViewHolder(var binding: ItemMovieBinding) : RecyclerView.ViewHolder(binding.root) {
 
     }
 
@@ -33,7 +28,8 @@ class MovieAdapter(var listMovie : List<Result>): RecyclerView.Adapter<MovieAdap
         holder.binding.etTanggal.text = list.releaseDate
         holder.binding.etGenre.text = list.mediaType
 
-        Glide.with(holder.itemView).load("https://image.tmdb.org/t/p/w200/${list.posterPath}").fitCenter().into(holder.binding.imgMovie)
+        Glide.with(holder.itemView).load("https://image.tmdb.org/t/p/w200/${list.posterPath}")
+            .fitCenter().into(holder.binding.imgMovie)
 
 
         holder.binding.cvDetailMoview.setOnClickListener {
@@ -43,11 +39,11 @@ class MovieAdapter(var listMovie : List<Result>): RecyclerView.Adapter<MovieAdap
             val overview = list.overview
             val image = list.posterPath
 
-            val movieData = Movie(title,overview,date,image)
+            val movieData = Movie(title, overview, date, image)
 
             val bundle = Bundle()
-            bundle.putParcelable("data_movie",movieData)
-            it.findNavController().navigate(R.id.action_homeFragment_to_detailFragment,bundle)
+            bundle.putParcelable("data_movie", movieData)
+            it.findNavController().navigate(R.id.action_homeFragment_to_detailFragment, bundle)
 
         }
     }
@@ -56,7 +52,7 @@ class MovieAdapter(var listMovie : List<Result>): RecyclerView.Adapter<MovieAdap
         return listMovie.size
     }
 
-    fun setDataMovie(list : List<Result>){
+    fun setDataMovie(list: List<Result>) {
         listMovie = list
         notifyDataSetChanged()
     }

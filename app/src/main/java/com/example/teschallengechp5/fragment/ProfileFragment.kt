@@ -1,4 +1,4 @@
-package com.example.chapterlima.fragment
+package com.example.teschallengechp5.fragment
 
 import android.content.Context
 import android.content.SharedPreferences
@@ -9,8 +9,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.navigation.Navigation
-import com.example.chapterlima.R
-import com.example.chapterlima.databinding.FragmentProfileBinding
+import com.example.teschallengechp5.R
+import com.example.teschallengechp5.databinding.FragmentProfileBinding
 import com.google.firebase.auth.FirebaseAuth
 
 class ProfileFragment : Fragment() {

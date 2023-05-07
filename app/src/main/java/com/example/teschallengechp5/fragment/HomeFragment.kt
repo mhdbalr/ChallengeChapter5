@@ -1,4 +1,4 @@
-package com.example.chapterlima.fragment
+package com.example.teschallengechp5.fragment
 
 import android.content.Context
 import android.content.SharedPreferences
@@ -7,15 +7,13 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.Navigation
-import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.chapterlima.R
-import com.example.chapterlima.adapter.MovieAdapter
-import com.example.chapterlima.databinding.FragmentHomeBinding
 import com.example.chapterlima.viewModel.MovieViewModel
+import com.example.teschallengechp5.R
+import com.example.teschallengechp5.adapter.MovieAdapter
+import com.example.teschallengechp5.databinding.FragmentHomeBinding
 import com.google.firebase.auth.FirebaseAuth
 
 class HomeFragment : Fragment() {
