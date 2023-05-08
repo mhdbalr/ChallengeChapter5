@@ -5,9 +5,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.chapterlima.model.Movie
 import com.example.chapterlima.viewModel.MovieViewModel
 import com.example.teschallengechp5.databinding.FragmentDetailBinding
+import com.example.teschallengechp5.model.Movie
 
 class DetailFragment : Fragment() {
     private lateinit var binding: FragmentDetailBinding

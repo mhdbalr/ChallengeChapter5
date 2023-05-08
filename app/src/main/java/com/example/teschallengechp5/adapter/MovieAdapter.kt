@@ -5,8 +5,6 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
-import com.example.chapterlima.model.Movie
-import com.example.chapterlima.network.Result
 import com.example.teschallengechp5.R
 import com.example.teschallengechp5.databinding.ItemMovieBinding
 

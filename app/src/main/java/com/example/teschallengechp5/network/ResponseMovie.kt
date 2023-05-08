@@ -1,4 +1,4 @@
-package com.example.chapterlima.network
+package com.example.teschallengechp5.network
 
 
 import com.google.gson.annotations.SerializedName

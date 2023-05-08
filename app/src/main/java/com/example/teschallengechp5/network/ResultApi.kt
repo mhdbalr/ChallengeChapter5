@@ -1,4 +1,4 @@
-package com.example.chapterlima.network
+package com.example.teschallengechp5.network
 
 import retrofit2.Call
 import retrofit2.http.GET

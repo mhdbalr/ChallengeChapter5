@@ -1,14 +1,8 @@
 package com.example.chapterlima.viewModel
 
 import android.annotation.SuppressLint
-import android.util.Log
-import android.widget.Toast
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.chapterlima.network.ResponseMovie
-import com.example.chapterlima.network.Result
-import com.example.chapterlima.network.RetrofitClient
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

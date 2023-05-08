@@ -1,4 +1,4 @@
-package com.example.chapterlima.model
+package com.example.teschallengechp5.model
 
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize

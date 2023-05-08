@@ -42,14 +42,14 @@ class ProfileFragment : Fragment() {
             firebaseAuth = FirebaseAuth.getInstance()
             firebaseAuth.signOut()
             Toast.makeText(context, "Update Data Berhasil", Toast.LENGTH_SHORT).show()
-            Navigation.findNavController(binding.root).navigate(R.id.action_profileFragment5_to_homeFragment)
+            Navigation.findNavController(binding.root).navigate(R.id.action_profileFragment_to_homeFragment)
         }
 
         binding.btnLogout.setOnClickListener {
             firebaseAuth = FirebaseAuth.getInstance()
             firebaseAuth.signOut()
             Toast.makeText(context, "Berhasil Logout", Toast.LENGTH_SHORT).show()
-            Navigation.findNavController(binding.root).navigate(R.id.action_profileFragment5_to_loginFragment)
+            Navigation.findNavController(binding.root).navigate(R.id.action_profileFragment_to_loginFragment)
         }
 
 

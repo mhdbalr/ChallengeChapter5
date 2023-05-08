@@ -55,7 +55,7 @@ class HomeFragment : Fragment() {
 
         //Profile
         binding.profile.setOnClickListener {
-            Navigation.findNavController(binding.root).navigate(R.id.action_homeFragment_to_profileFragment5)
+            Navigation.findNavController(binding.root).navigate(R.id.action_homeFragment_to_profileFragment)
         }
 
 
