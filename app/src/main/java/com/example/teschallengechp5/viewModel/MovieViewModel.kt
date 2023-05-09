@@ -3,6 +3,8 @@ package com.example.chapterlima.viewModel
 import android.annotation.SuppressLint
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.example.teschallengechp5.network.ResponseMovie
+import com.example.teschallengechp5.network.RetrofitClient
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
