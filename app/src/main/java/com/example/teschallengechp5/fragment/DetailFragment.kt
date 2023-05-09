@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.bumptech.glide.Glide
 import com.example.chapterlima.viewModel.MovieViewModel
 import com.example.teschallengechp5.databinding.FragmentDetailBinding
 import com.example.teschallengechp5.model.Movie
