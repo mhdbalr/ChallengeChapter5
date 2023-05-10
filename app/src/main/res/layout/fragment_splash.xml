@@ -9,7 +9,7 @@
         android:id="@+id/imageView2"
         android:layout_width="415dp"
         android:layout_height="734dp"
-        android:src="@drawable/watch"
+        android:src="@drawable/film"
         tools:ignore="MissingConstraints" />
 
 
