@@ -10,7 +10,7 @@ import com.example.teschallengechp5.R
 import com.example.teschallengechp5.databinding.ItemMovieBinding
 import com.example.teschallengechp5.model.Movie
 
-class MovieAdapter(var listMovie : List<Result>): RecyclerView.Adapter<MovieAdapter.ViewHolder>() {
+class MovieAdapter(var listMovie : List<com.example.teschallengechp5.network.Result>): RecyclerView.Adapter<MovieAdapter.ViewHolder>() {
 
     class ViewHolder(var binding: ItemMovieBinding) : RecyclerView.ViewHolder(binding.root) {
 
@@ -52,7 +52,7 @@ class MovieAdapter(var listMovie : List<Result>): RecyclerView.Adapter<MovieAdap
         return listMovie.size
     }
 
-    fun setDataMovie(list: List<Result>) {
+    fun setDataMovie(list: List<com.example.teschallengechp5.network.Result>) {
         listMovie = list
         notifyDataSetChanged()
     }
