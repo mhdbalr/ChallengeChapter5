@@ -58,12 +58,12 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_title" />
 
     <TextView
-        android:id="@+id/tv_tgl_release"
+        android:id="@+id/tv_date_release"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
-        android:text="2002-01-01"
+        android:text="2002-11-09"
         android:textSize="15sp"
         android:textStyle="normal"
         app:layout_constraintEnd_toEndOf="parent"

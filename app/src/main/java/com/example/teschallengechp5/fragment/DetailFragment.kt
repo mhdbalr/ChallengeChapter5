@@ -32,7 +32,7 @@ class DetailFragment : Fragment() {
         val imagepath = list.imagePath
 
         binding.tvTitle.text = title
-        binding.tvTglRelease.text = date
+        binding.tvDateRelease.text = date
         binding.tvDesc.text = overview
         Glide.with(view.context).load("https://image.tmdb.org/t/p/w780${imagepath}").into(binding.imgMovie)
 
