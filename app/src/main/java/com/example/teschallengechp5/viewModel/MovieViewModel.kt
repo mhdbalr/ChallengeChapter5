@@ -12,7 +12,7 @@ import retrofit2.Response
 class MovieViewModel : ViewModel() {
     lateinit var liveDataMovie : MutableLiveData<List<com.example.teschallengechp5.network.Result>>
     lateinit var liveDetailMovie : MutableLiveData<ResponseMovie>
-    val key = "a89633b1333a8e0f2bb90016feb3252a"
+    val key = "2b66746a9a705b1acae562b4b4d07704"
 
     init {
         liveDataMovie = MutableLiveData()
