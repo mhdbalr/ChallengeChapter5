@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-medium"
-        android:text="Detail Movie"
+        android:text="@string/detail_movie"
         android:textColor="@color/black"
         android:textSize="40sp"
         android:textStyle="bold"
@@ -36,7 +36,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:gravity="center"
-        android:text="Title Movie"
+        android:text="@string/title_movie"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -50,7 +50,7 @@
         android:layout_marginTop="20dp"
         android:fontFamily="sans-serif-light"
         android:gravity="center"
-        android:text="Description Movie"
+        android:text="@string/description_movie"
         android:textSize="20sp"
         android:textStyle="normal"
         app:layout_constraintEnd_toEndOf="parent"
@@ -58,17 +58,25 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_title" />
 
     <TextView
-        android:id="@+id/tv_date_release"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
-        android:text="2002-11-09"
+        android:text="@string/_2002_11_09"
         android:textSize="15sp"
         android:textStyle="normal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_desc" />
+
+    <ImageView
+        android:id="@+id/imgFav"
+        android:layout_width="47dp"
+        android:layout_height="41dp"
+        android:src="@drawable/ic_favorit_foreground"
+        tools:layout_editor_absoluteX="318dp"
+        tools:layout_editor_absoluteY="643dp"
+        tools:ignore="MissingConstraints" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

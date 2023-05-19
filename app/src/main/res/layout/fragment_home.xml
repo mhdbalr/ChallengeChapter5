@@ -24,7 +24,7 @@
             android:text="@string/wlcm"
             android:textSize="18sp"
             android:textColor="@color/black"
-            />
+            tools:ignore="RelativeOverlap" />
 
         <ImageView
             android:id="@+id/profile"
@@ -36,18 +36,25 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="HOME"
             android:layout_below="@+id/profile"
+            android:background="@color/white"
+            android:text="@string/hm"
             android:textAlignment="center"
-            android:textColor="@color/black"
+            android:textColor="@color/grey"
+            android:textSize="30sp"
             android:textStyle="bold"
-            android:textSize="30sp" />
+            tools:ignore="TextContrastCheck" />
+        <ImageView
+            android:layout_width="49dp"
+            android:layout_height="41dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="53dp"
+            android:src="@drawable/ic_favorit_foreground" />
 
     </RelativeLayout>
 
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_list"
         android:layout_marginTop="150dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

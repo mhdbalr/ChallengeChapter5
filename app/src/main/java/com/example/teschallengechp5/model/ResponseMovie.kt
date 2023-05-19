@@ -1,4 +1,4 @@
-package com.example.teschallengechp5.network
+package com.example.teschallengechp5.model
 
 
 import com.google.gson.annotations.SerializedName

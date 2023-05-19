@@ -1,16 +1,19 @@
-package com.example.chapterlima.viewModel
+package com.example.teschallengechp5.viewModel
 
 import android.annotation.SuppressLint
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.teschallengechp5.network.ResponseMovie
+import com.example.teschallengechp5.model.ResponseMovie
+import com.example.teschallengechp5.model.Result
 import com.example.teschallengechp5.network.RetrofitClient
+import dagger.hilt.android.lifecycle.HiltViewModel
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
+@HiltViewModel
 class MovieViewModel : ViewModel() {
-    lateinit var liveDataMovie : MutableLiveData<List<com.example.teschallengechp5.network.Result>>
+    lateinit var liveDataMovie : MutableLiveData<List<Result>>
     lateinit var liveDetailMovie : MutableLiveData<ResponseMovie>
     val key = "2b66746a9a705b1acae562b4b4d07704"
 
@@ -19,7 +22,7 @@ class MovieViewModel : ViewModel() {
         liveDetailMovie = MutableLiveData()
     }
 
-    fun getDataFilm() : MutableLiveData<List<com.example.teschallengechp5.network.Result>>{
+    fun getDataFilm() : MutableLiveData<List<Result>>{
         return liveDataMovie
     }
     fun getDetailMovie() : MutableLiveData<ResponseMovie>{

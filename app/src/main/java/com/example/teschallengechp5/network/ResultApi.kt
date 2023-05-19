@@ -1,5 +1,6 @@
 package com.example.teschallengechp5.network
 
+import com.example.teschallengechp5.model.ResponseMovie
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Query

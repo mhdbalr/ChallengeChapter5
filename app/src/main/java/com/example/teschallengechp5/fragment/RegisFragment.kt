@@ -3,16 +3,18 @@ package com.example.teschallengechp5.fragment
 import android.content.Context
 import android.content.SharedPreferences
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.teschallengechp5.R
 import com.example.teschallengechp5.databinding.FragmentRegisBinding
 import com.google.firebase.auth.FirebaseAuth
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class RegisFragment : Fragment() {
     lateinit var binding: FragmentRegisBinding
     private lateinit var firebaseAuth: FirebaseAuth
@@ -21,7 +23,7 @@ class RegisFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
         binding = FragmentRegisBinding.inflate(layoutInflater, container, false)
         return binding.root
@@ -52,10 +54,10 @@ class RegisFragment : Fragment() {
         if (username.isNotEmpty() && email.isNotEmpty() && password.isNotEmpty()) {
             firebaseAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener {
                 if (it.isSuccessful) {
-                    Toast.makeText(context, "Registration Success", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(context, "Sign Up Success", Toast.LENGTH_SHORT).show()
                     findNavController().navigate(R.id.action_regisFragment_to_loginFragment)
                 } else {
-                    Toast.makeText(context, "Data tidak sesuai", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(context, "Data tidak valid", Toast.LENGTH_SHORT).show()
                 }
             }
         }

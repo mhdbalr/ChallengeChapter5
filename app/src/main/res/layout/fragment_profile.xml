@@ -3,16 +3,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bgr"
+    android:background="@drawable/img"
     android:padding="20dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".fragment.ProfileFragment">
+    tools:context=".fragment.ProfileFragment"
+    tools:ignore="Overdraw">
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="PROFILE"
+        android:text="@string/pf"
         android:textColor="@color/black"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -67,7 +68,6 @@
         app:layout_constraintTop_toBottomOf="@+id/inputUsername">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/updateNama"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textWebEditText"
@@ -90,7 +90,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/inputNama">
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/updateLahir"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textWebEditText"
@@ -114,7 +113,6 @@
         app:layout_constraintTop_toBottomOf="@+id/inputTanggal">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/updateAlamat"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textWebEditText"
@@ -129,7 +127,7 @@
         style="@style/Widget.MaterialComponents.Button.TextButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Update"
+        android:text="@string/updt"
         android:textColor="@color/grey"
         android:textSize="25sp"
         android:layout_marginTop="20dp"
@@ -143,7 +141,7 @@
         style="@style/Widget.MaterialComponents.Button.TextButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Logout"
+        android:text="@string/logouuutt"
         android:textColor="@color/grey"
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
